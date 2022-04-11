@@ -1,0 +1,83 @@
+.addition {
+    background: #F6F6F6;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 142px 100px 143px;
+        gap: 30px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-top: 80px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+    }
+
+    &__subtitle {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin: 0;
+    }
+
+    &__description {
+        margin: 0;
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        color: #B2B2B2;
+    }
+
+    &__donate {
+        text-decoration: none;
+        background: #F1CDB3;
+        align-items: center;
+        padding: 10px 15px;     
+        border-radius: 9px;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__number-card {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin: 0;
+    }
+
+    &__photo {
+        padding-top: 91px;
+    }
+}

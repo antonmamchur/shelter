@@ -1,0 +1,64 @@
+.header {
+   
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0;
+        height: 100%;
+
+    }
+
+    &__logo {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        
+    }
+
+    &__logo-title {
+        font-family: 'Georgia';
+        color: #F1CDB3;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        margin: 0;
+        margin-left: 2px;
+    }
+
+    &__logo-subtitle {
+        font-family: Arial;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        margin: 0;
+        margin-left: 4px;
+    
+
+    }
+    
+
+
+    &__nav {
+        display: flex;
+        gap: 1.85vw;
+        list-style-type: none;
+        color: #CDCDCD;
+        
+    }
+
+    &__nav-item {
+       
+       
+    }
+
+    &__nav-link {
+        color: inherit;
+        font-family: Arial;
+        font-size: 15px;
+        line-height: 1.5rem;
+        text-decoration: none;
+    }
+}
+

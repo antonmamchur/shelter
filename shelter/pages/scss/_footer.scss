@@ -1,0 +1,67 @@
+.footer {
+    max-height: 350px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        max-height: 310px;
+        padding-top: 40px;
+    }
+
+    &__photo {
+        align-self: flex-end;
+    }
+
+    &__contact-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 160px;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+
+    &__questions-contact, &__visit-location {
+        display: flex;
+        flex-direction: center;
+        column-gap: 20px;
+        text-decoration: none;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+    }
+
+    &__questions, &__visit {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 40px;
+        margin-top: 16px;
+    }
+
+    &__visit {
+        row-gap: 34px;
+    }
+
+    &__questions-title, &__visit-title {
+        margin: 0;
+        padding: 0;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        align-self: flex-start;
+    }
+
+    &__questions-contact-text, &__visit-location-text {
+        margin: 0;
+    }
+}

@@ -1,0 +1,109 @@
+.our-friends {
+    background: #F6F6F6;
+    max-height: 877px;
+    
+
+    &__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0;
+    padding: 0;
+    }
+
+    &__btn-round {
+     
+        border: 2px solid #F1CDB3;
+        box-sizing: border-box;
+        border-radius: 100px;
+        width: 52px;
+        height: 52px;
+
+    }
+
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0 100px 0;
+        row-gap: 60px;
+    }
+
+    &__button {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        background: #F1CDB3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 45px;
+    }
+
+
+
+    &__slider {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 53px;
+        
+
+        &__card-wrapper {
+            display: flex;
+            column-gap: 90px;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #FAFAFA;
+            border-radius: 9px;
+            row-gap: 30px;
+            padding-bottom: 30px;
+            margin: 0;
+        }
+
+        &__card-name {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: #545454;
+            margin: 0;
+        }
+
+        &__btn {
+            color: #292929;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 130%;      
+            letter-spacing: 0.06em;
+            padding: 15px 45px;
+            margin: 0;
+        }
+
+        &__card-picture {
+            max-height: 100%;
+        }
+    }
+  
+ 
+
+}

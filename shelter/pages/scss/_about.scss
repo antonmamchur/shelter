@@ -1,0 +1,42 @@
+.about {
+    display: flex;
+    margin: 80px 175px 100px 175px;
+    max-width: 850px;
+    
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 25vw;
+        gap: 24px;
+        margin-top: 14px;
+        
+        
+    }
+
+    &__pets {
+        height: auto;
+        margin-right: 121px;
+    }
+
+    &__heading {
+        letter-spacing: 0.06em;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        max-width: 21vw;
+        margin: 0;
+
+    }
+
+    &__subheading {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;  
+        margin: 0;
+    }
+}

@@ -1,11 +1,34 @@
-body {
+.main {
     max-width: 1280px;
+    max-height: 3796px;
     margin: 0 auto;
   }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
 
+.wrapper__background-dark {
+  background-image: url(../../assets/images/start-screen-background.png);
+}
 
+.wrapper__background-light {
+  background: #F6F6F6;
+}
 
+.btn {
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background: #FAFAFA;
+}
 
-
-@import "_header"
+@import "_header";
+@import "_not-only";
+@import "_about";
+@import "_our-friends";
+@import "_help";
+@import "_addition";
+@import "_footer";
