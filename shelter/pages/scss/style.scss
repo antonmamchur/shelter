@@ -1,4 +1,4 @@
-.main {
+.main, .pets {
     max-width: 1280px;
     max-height: 3796px;
     margin: 0 auto;
@@ -24,7 +24,28 @@
   border-radius: 100px;
   background: #FAFAFA;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
+
+.btn-round {
+     
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+
+    &_inactive {
+      cursor: auto;
+    }
+
+    &_highlight {
+      background: #F1CDB3;
+    }
+}
+
 
 @import "_header";
 @import "_not-only";
@@ -33,3 +54,4 @@
 @import "_help";
 @import "_addition";
 @import "_footer";
+@import "_pets"

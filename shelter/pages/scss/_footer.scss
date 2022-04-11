@@ -1,11 +1,11 @@
 .footer {
-    max-height: 350px;
+    max-height: 100%;
 
     &__content {
         display: flex;
         justify-content: space-between;
         max-height: 310px;
-        padding-top: 40px;
+        padding-top: 50px;
     }
 
     &__photo {
@@ -40,8 +40,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        row-gap: 40px;
-        margin-top: 16px;
+        row-gap: 45px;
+        margin-top: 15px;
     }
 
     &__visit {
@@ -59,6 +59,7 @@
         letter-spacing: 0.06em;
         color: #FFFFFF;
         align-self: flex-start;
+        margin-bottom: -10px;
     }
 
     &__questions-contact-text, &__visit-location-text {

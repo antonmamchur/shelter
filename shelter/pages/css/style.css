@@ -1,4 +1,4 @@
-.main {
+.main, .pets {
   max-width: 1280px;
   max-height: 3796px;
   margin: 0 auto;
@@ -24,21 +24,38 @@
   border-radius: 100px;
   background: #FAFAFA;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
-.header__content {
+.btn-round {
+  border: 2px solid #F1CDB3;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+}
+.btn-round_inactive {
+  cursor: auto;
+}
+.btn-round_highlight {
+  background: #F1CDB3;
+}
+
+.header__content, .our-pets__content {
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
   height: 100%;
 }
-.header__logo {
+.header__logo, .our-pets__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1vh;
 }
-.header__logo-title {
+.header__logo-title, .our-pets__logo-title {
   font-family: "Georgia";
   color: #F1CDB3;
   font-weight: 400;
@@ -46,7 +63,7 @@
   margin: 0;
   margin-left: 2px;
 }
-.header__logo-subtitle {
+.header__logo-subtitle, .our-pets__logo-subtitle {
   font-family: Arial;
   color: #ffffff;
   font-weight: 400;
@@ -56,21 +73,55 @@
   margin: 0;
   margin-left: 4px;
 }
-.header__nav {
+.header__nav, .our-pets__nav {
   display: flex;
   gap: 1.85vw;
   list-style-type: none;
   color: #CDCDCD;
 }
-.header__nav-link {
+.header__nav-link, .our-pets__nav-link {
   color: inherit;
   font-family: Arial;
   font-size: 15px;
   line-height: 1.5rem;
   text-decoration: none;
 }
-.header__nav-link_active {
+.header__nav-link_active, .our-pets__nav-link_active {
   color: #fafafa;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.our-pets {
+  background: #FFFFFF;
+  position: -webkit-sticky;
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+  overflow-y: auto;
+}
+.our-pets__link {
+  text-decoration: none;
+}
+.our-pets__content {
+  padding: 30px 0;
+}
+.our-pets__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+.our-pets__logo-title {
+  color: #545454;
+}
+.our-pets__logo-subtitle {
+  color: #292929;
+}
+.our-pets__nav {
+  color: #545454;
+}
+.our-pets__nav-link_active {
+  color: #292929;
   border-bottom: 3px solid #F1CDB3;
 }
 
@@ -229,7 +280,7 @@
   align-items: center;
   background: #FAFAFA;
   border-radius: 9px;
-  row-gap: 30px;
+  row-gap: 20px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -283,13 +334,13 @@
 .help__list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-  -moz-column-gap: 90px;
-       column-gap: 90px;
+  justify-content: center;
+  -moz-column-gap: 112px;
+       column-gap: 112px;
   row-gap: 50px;
   flex-wrap: wrap;
   max-width: 1026px;
-  margin: 0 127px;
+  margin: 0 100px;
   padding: 0;
 }
 .help__item {
@@ -393,13 +444,13 @@
 }
 
 .footer {
-  max-height: 350px;
+  max-height: 100%;
 }
 .footer__content {
   display: flex;
   justify-content: space-between;
   max-height: 310px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .footer__photo {
   align-self: flex-end;
@@ -431,8 +482,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  row-gap: 40px;
-  margin-top: 16px;
+  row-gap: 45px;
+  margin-top: 15px;
 }
 .footer__visit {
   row-gap: 34px;
@@ -448,7 +499,55 @@
   letter-spacing: 0.06em;
   color: #FFFFFF;
   align-self: flex-start;
+  margin-bottom: -10px;
 }
 .footer__questions-contact-text, .footer__visit-location-text {
   margin: 0;
+}
+
+.pets {
+  background: #F6F6F6;
+}
+.pets__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pets__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  padding-top: 80px;
+}
+.pets__card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 30px;
+  margin-bottom: 60px;
+}
+.pets__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FAFAFA;
+  border-radius: 9px;
+  row-gap: 25px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.pets__pagination {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */
