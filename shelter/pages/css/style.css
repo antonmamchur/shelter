@@ -43,6 +43,14 @@
   background: #F1CDB3;
 }
 
+@font-face {
+  font-family: "Georgia";
+  src: url("../../assets/fonts/georgia/georgia-regular.ttf");
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../../assets/fonts/arial/arial-regular.ttf");
+}
 .header__content, .our-pets__content {
   display: flex;
   justify-content: space-between;
