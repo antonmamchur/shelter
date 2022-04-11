@@ -23,6 +23,7 @@
   box-sizing: border-box;
   border-radius: 100px;
   background: #FAFAFA;
+  cursor: pointer;
 }
 
 .header__content {
@@ -68,6 +69,10 @@
   line-height: 1.5rem;
   text-decoration: none;
 }
+.header__nav-link_active {
+  color: #fafafa;
+  border-bottom: 3px solid #F1CDB3;
+}
 
 .not-only {
   display: flex;
@@ -107,6 +112,9 @@
 }
 .not-only__puppy {
   height: 100%;
+}
+.not-only__link {
+  text-decoration: none;
 }
 .not-only__btn {
   background: #F1CDB3;
@@ -180,6 +188,7 @@
   border-radius: 100px;
   width: 52px;
   height: 52px;
+  cursor: pointer;
 }
 .our-friends__content {
   display: flex;
@@ -223,6 +232,9 @@
   row-gap: 30px;
   padding-bottom: 30px;
   margin: 0;
+}
+.our-friends__slider__card:hover .our-friends__slider__btn {
+  background: #F1CDB3;
 }
 .our-friends__slider__card-name {
   font-family: "Georgia";

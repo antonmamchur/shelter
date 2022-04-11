@@ -23,7 +23,7 @@
         border-radius: 100px;
         width: 52px;
         height: 52px;
-
+        cursor: pointer;
     }
 
 
@@ -74,6 +74,12 @@
             row-gap: 30px;
             padding-bottom: 30px;
             margin: 0;
+
+            &:hover {
+                .our-friends__slider__btn {
+                    background: #F1CDB3;
+                }
+            }
         }
 
         &__card-name {

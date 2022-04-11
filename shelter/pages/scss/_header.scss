@@ -48,17 +48,17 @@
         
     }
 
-    &__nav-item {
-       
-       
-    }
-
     &__nav-link {
         color: inherit;
         font-family: Arial;
         font-size: 15px;
         line-height: 1.5rem;
         text-decoration: none;
+
+        &_active {
+                color: #fafafa;
+                border-bottom:3px solid #F1CDB3;
     }
+}
 }
 

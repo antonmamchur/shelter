@@ -42,6 +42,10 @@
         height: 100%;
     }
 
+    &__link {
+        text-decoration: none;
+    }
+
     &__btn {
         background: #F1CDB3;
         display: flex;
