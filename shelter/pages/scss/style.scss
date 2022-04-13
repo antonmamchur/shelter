@@ -39,10 +39,16 @@
 
     &_inactive {
       cursor: auto;
+      pointer-events: none;
     }
 
     &_highlight {
       background: #F1CDB3;
+    }
+
+    &:hover {
+      background: #F1CDB3
+      ;
     }
 }
 

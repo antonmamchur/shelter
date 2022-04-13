@@ -38,8 +38,12 @@
 }
 .btn-round_inactive {
   cursor: auto;
+  pointer-events: none;
 }
 .btn-round_highlight {
+  background: #F1CDB3;
+}
+.btn-round:hover {
   background: #F1CDB3;
 }
 
@@ -83,7 +87,7 @@
 }
 .header__nav, .our-pets__nav {
   display: flex;
-  gap: 1.85vw;
+  gap: 35px;
   list-style-type: none;
   color: #CDCDCD;
 }
@@ -198,7 +202,7 @@
 .about__content {
   display: flex;
   flex-direction: column;
-  max-width: 25vw;
+  max-width: 425px;
   gap: 24px;
   margin-top: 14px;
 }
@@ -213,7 +217,6 @@
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  max-width: 21vw;
   margin: 0;
 }
 .about__subheading {
@@ -241,13 +244,8 @@
   margin: 0;
   padding: 0;
 }
-.our-friends__btn-round {
-  border: 2px solid #F1CDB3;
-  box-sizing: border-box;
-  border-radius: 100px;
-  width: 52px;
-  height: 52px;
-  cursor: pointer;
+.our-friends__btn-link {
+  text-decoration: none;
 }
 .our-friends__content {
   display: flex;
@@ -291,6 +289,11 @@
   row-gap: 20px;
   padding-bottom: 30px;
   margin: 0;
+}
+.our-friends__slider__card:hover {
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .our-friends__slider__card:hover .our-friends__slider__btn {
   background: #F1CDB3;
