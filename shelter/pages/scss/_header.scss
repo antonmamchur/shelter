@@ -4,7 +4,11 @@
         display: flex;
         justify-content: space-between;
         padding: 60px 0;
-        height: 100%;
+
+
+        @media only screen and (max-width: 1279px) {
+            padding-top: 30px;
+        }
 
     }
 

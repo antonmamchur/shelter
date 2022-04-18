@@ -32,6 +32,17 @@
         max-width: 1026px;
         margin: 0 100px;
         padding: 0;
+        
+
+        @media screen and (max-width: 1279px) {
+            width: 630px;
+            justify-content: flex-start;
+            margin: 0 40px;
+            column-gap: 60px;
+            max-width: 630px;
+            row-gap: 55px;
+
+        }
 
     }
 
@@ -43,6 +54,10 @@
         gap: 30px;
         padding: 0;
         margin: 0;
+
+        @media screen and (max-width: 1279px) {
+            width: 170px;
+        }
     }
 
     &__name {

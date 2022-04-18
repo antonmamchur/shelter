@@ -1,17 +1,25 @@
+
+
 .main, .pets {
     max-width: 1280px;
     max-height: 3796px;
     margin: 0 auto;
+    
   }
 
 .wrapper {
   max-width: 1200px;
-  margin: 0 auto;
   padding: 0 40px;
+
+  @media  screen and (max-width: 1279px) {
+    padding: 0 30px;
+  }
+
 }
 
 .wrapper__background-dark {
   background-image: url(../../assets/images/start-screen-background.png);
+  background-size: cover
 }
 
 .wrapper__background-light {

@@ -1,7 +1,6 @@
 .our-friends {
     background: #F6F6F6;
     max-height: 877px;
-    
 
     &__heading {
     font-family: 'Georgia';
@@ -14,6 +13,23 @@
     color: #545454;
     margin: 0;
     padding: 0;
+    }
+
+    &__btn-prev {
+        margin-right: 53px;
+
+        @media screen and (max-width: 1279px) {
+            margin-right: 12px;
+            
+        }
+    }
+
+    &__btn-next {
+        margin-left: 53px;
+
+        @media screen and (max-width: 1279px) {
+            margin-left: 12px;
+        }
     }
 
     &__btn-link {
@@ -48,12 +64,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        column-gap: 53px;
+
         
 
         &__card-wrapper {
             display: flex;
             column-gap: 90px;
+
+            @media screen and (max-width: 1279px) {
+                div:nth-child(3n   ) {
+                    display: none;
+                }
+                column-gap: 40px;
+
+                
+            }
+            
         }
 
         &__card {

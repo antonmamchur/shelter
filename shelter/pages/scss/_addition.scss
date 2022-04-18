@@ -6,6 +6,14 @@
         align-items: flex-start;
         padding: 0 142px 100px 143px;
         gap: 30px;
+
+        @media screen and (max-width: 1279px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 0 164px 100px 164px;
+            gap: 0;
+
+        }
     }
 
     &__info {
@@ -14,6 +22,11 @@
         align-items: flex-start;
         gap: 20px;
         padding-top: 80px;
+
+        @media screen and (max-width: 1279px) {
+            align-self: center;
+        }
+
     }
 
     &__title {
@@ -27,6 +40,7 @@
         align-items: center;
         letter-spacing: 0.06em;
         color: #545454;
+
     }
 
     &__subtitle {
@@ -79,5 +93,9 @@
 
     &__photo {
         padding-top: 91px;
+
+        @media screen and (max-width: 1279px) {
+            padding-top: 60px;
+        }
     }
 }

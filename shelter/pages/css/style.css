@@ -6,12 +6,17 @@
 
 .wrapper {
   max-width: 1200px;
-  margin: 0 auto;
   padding: 0 40px;
+}
+@media screen and (max-width: 1279px) {
+  .wrapper {
+    padding: 0 30px;
+  }
 }
 
 .wrapper__background-dark {
   background-image: url(../../assets/images/start-screen-background.png);
+  background-size: cover;
 }
 
 .wrapper__background-light {
@@ -59,7 +64,11 @@
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
-  height: 100%;
+}
+@media only screen and (max-width: 1279px) {
+  .header__content, .our-pets__content {
+    padding-top: 30px;
+  }
 }
 .header__logo, .our-pets__logo {
   display: flex;
@@ -139,9 +148,16 @@
 
 .not-only {
   display: flex;
-  height: 728px;
   -moz-column-gap: 42px;
        column-gap: 42px;
+}
+@media screen and (max-width: 1279px) {
+  .not-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .not-only__content {
   display: flex;
@@ -150,6 +166,12 @@
   max-width: 460px;
   margin-top: 163px;
   row-gap: 42px;
+}
+@media screen and (max-width: 1279px) {
+  .not-only__content {
+    margin-top: 0px;
+    align-items: center;
+  }
 }
 .not-only__heading {
   font-family: "Georgia";
@@ -161,6 +183,12 @@
   align-items: center;
   color: #FFFFFF;
   margin: 0;
+}
+@media screen and (max-width: 1279px) {
+  .not-only__heading {
+    margin-top: 0px;
+    align-self: flex-start;
+  }
 }
 .not-only__subheading {
   font-family: "Arial";
@@ -174,7 +202,22 @@
   margin: 0;
 }
 .not-only__puppy {
-  height: 100%;
+  max-height: 728px;
+  max-width: auto;
+}
+@media screen and (max-width: 1279px) {
+  .not-only__puppy {
+    margin-top: 100px;
+    margin-left: 130px;
+  }
+}
+.not-only__puppy-img {
+  max-height: 728px;
+}
+@media screen and (max-width: 1279px) {
+  .not-only__puppy-img {
+    max-height: 593px;
+  }
 }
 .not-only__link {
   text-decoration: none;
@@ -184,7 +227,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 45px;
+  padding: 13px 42px;
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -197,7 +240,22 @@
 .about {
   display: flex;
   margin: 80px 175px 100px 175px;
-  max-width: 850px;
+}
+@media screen and (max-width: 1279px) {
+  .about {
+    margin: 80px 135px 100px 135px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__pets {
+    order: 2;
+  }
 }
 .about__content {
   display: flex;
@@ -206,9 +264,22 @@
   gap: 24px;
   margin-top: 14px;
 }
+@media screen and (max-width: 1279px) {
+  .about__content {
+    max-width: 430px;
+    margin: 0;
+  }
+}
 .about__pets {
   height: auto;
   margin-right: 121px;
+}
+@media screen and (max-width: 1279px) {
+  .about__pets {
+    margin-top: 80px;
+    margin-right: 0;
+    align-self: center;
+  }
 }
 .about__heading {
   letter-spacing: 0.06em;
@@ -244,6 +315,22 @@
   margin: 0;
   padding: 0;
 }
+.our-friends__btn-prev {
+  margin-right: 53px;
+}
+@media screen and (max-width: 1279px) {
+  .our-friends__btn-prev {
+    margin-right: 12px;
+  }
+}
+.our-friends__btn-next {
+  margin-left: 53px;
+}
+@media screen and (max-width: 1279px) {
+  .our-friends__btn-next {
+    margin-left: 12px;
+  }
+}
 .our-friends__btn-link {
   text-decoration: none;
 }
@@ -271,13 +358,20 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  -moz-column-gap: 53px;
-       column-gap: 53px;
 }
 .our-friends__slider__card-wrapper {
   display: flex;
   -moz-column-gap: 90px;
        column-gap: 90px;
+}
+@media screen and (max-width: 1279px) {
+  .our-friends__slider__card-wrapper {
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .our-friends__slider__card-wrapper div:nth-child(3n) {
+    display: none;
+  }
 }
 .our-friends__slider__card {
   display: flex;
@@ -354,6 +448,17 @@
   margin: 0 100px;
   padding: 0;
 }
+@media screen and (max-width: 1279px) {
+  .help__list {
+    width: 630px;
+    justify-content: flex-start;
+    margin: 0 40px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+    max-width: 630px;
+    row-gap: 55px;
+  }
+}
 .help__item {
   display: flex;
   flex-direction: column;
@@ -362,6 +467,11 @@
   gap: 30px;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 1279px) {
+  .help__item {
+    width: 170px;
+  }
 }
 .help__name {
   margin: 0;
@@ -387,12 +497,25 @@
   padding: 0 142px 100px 143px;
   gap: 30px;
 }
+@media screen and (max-width: 1279px) {
+  .addition__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 164px 100px 164px;
+    gap: 0;
+  }
+}
 .addition__info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
   padding-top: 80px;
+}
+@media screen and (max-width: 1279px) {
+  .addition__info {
+    align-self: center;
+  }
 }
 .addition__title {
   margin: 0;
@@ -453,6 +576,11 @@
 .addition__photo {
   padding-top: 91px;
 }
+@media screen and (max-width: 1279px) {
+  .addition__photo {
+    padding-top: 60px;
+  }
+}
 
 .footer {
   max-height: 100%;
@@ -460,11 +588,23 @@
 .footer__content {
   display: flex;
   justify-content: space-between;
-  max-height: 310px;
+  max-height: 100%;
   padding-top: 50px;
+}
+@media screen and (max-width: 1279px) {
+  .footer__content {
+    flex-direction: column;
+    padding-top: 5px;
+    margin: 0 34px;
+  }
 }
 .footer__photo {
   align-self: flex-end;
+}
+@media screen and (max-width: 1279px) {
+  .footer__photo {
+    align-self: center;
+  }
 }
 .footer__contact-wrapper {
   display: flex;
@@ -473,6 +613,12 @@
   gap: 160px;
   margin: 0;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1279px) {
+  .footer__contact-wrapper {
+    justify-content: center;
+    gap: 60px;
+  }
 }
 .footer__questions-contact, .footer__visit-location {
   display: flex;
@@ -494,7 +640,13 @@
   justify-content: flex-start;
   align-items: flex-start;
   row-gap: 45px;
-  margin-top: 15px;
+}
+@media screen and (max-width: 1279px) {
+  .footer__questions, .footer__visit {
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 50px;
+  }
 }
 .footer__visit {
   row-gap: 34px;

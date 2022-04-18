@@ -4,12 +4,22 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        max-height: 310px;
+        max-height: 100%;
         padding-top: 50px;
+
+        @media screen and (max-width: 1279px) {
+            flex-direction: column;
+            padding-top: 5px;
+            margin: 0 34px;
+        }
     }
 
     &__photo {
         align-self: flex-end;
+
+        @media screen and (max-width: 1279px) {
+            align-self: center;
+        }
     }
 
     &__contact-wrapper {
@@ -19,6 +29,11 @@
         gap: 160px;
         margin: 0;
         margin-bottom: 60px;
+
+        @media screen and (max-width: 1279px) {
+            justify-content:center;
+            gap: 60px;
+        }
     }
 
     &__questions-contact, &__visit-location {
@@ -41,12 +56,19 @@
         justify-content: flex-start;
         align-items: flex-start;
         row-gap: 45px;
-        margin-top: 15px;
+
+
+        @media screen and (max-width: 1279px) {
+            flex-direction: column;
+            margin-top: 20px;
+            row-gap: 50px;
+        }
     }
 
     &__visit {
         row-gap: 34px;
     }
+
 
     &__questions-title, &__visit-title {
         margin: 0;
