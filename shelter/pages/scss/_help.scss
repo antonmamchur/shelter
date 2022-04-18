@@ -6,6 +6,11 @@
             align-items: center;
             padding: 80px 0 100px 0;
             row-gap: 60px;
+
+            @media screen and (max-width: 767px) {
+                padding: 42px 0;
+                row-gap: 42px;
+             }
     
     }
 
@@ -20,6 +25,10 @@
         color: #545454;
         margin: 0;
         padding: 0;
+
+        @media screen and (max-width: 767px) {
+           font-size: 25px;
+        }
         }
 
     &__list {
@@ -44,6 +53,16 @@
 
         }
 
+        @media screen and (max-width: 767px) {
+            width: 290px;
+            justify-content: space-between;
+            margin: 0;
+            column-gap: 30px;
+            max-width: 290px;
+            row-gap: 30px;
+
+        }
+
     }
 
     &__item {
@@ -57,6 +76,11 @@
 
         @media screen and (max-width: 1279px) {
             width: 170px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 130px;
+            gap: 20px;
         }
     }
 
@@ -73,5 +97,17 @@
         text-align: center;
         letter-spacing: 0.06em;
         color: #545454;
+
+        @media screen and (max-width: 767px) {
+            font-size: 15px;
+            
+        }
+    }
+
+    &__icon {
+        @media screen and (max-width: 767px) {
+            height: 50px;
+            
+        }
     }
 }

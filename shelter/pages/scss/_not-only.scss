@@ -9,6 +9,11 @@
         justify-content: center;
     }
 
+    @media screen and (max-width: 767px) {
+       height: 673px;        ;
+        
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
@@ -38,6 +43,14 @@
         margin-top: 0px;
         align-self: flex-start;
     }
+
+    @media screen and (max-width: 767px) {
+        font-size: 25px;
+        align-self: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+;
+    }
     }
 
     &__subheading {
@@ -51,6 +64,12 @@
         color: #CDCDCD;
         margin: 0;
 
+        @media screen and (max-width: 767px) {
+            font-size: 15px;
+            align-self: center;
+            text-align: center;
+        }
+
     }
 
     &__puppy {
@@ -61,12 +80,22 @@
             margin-left: 130px;
 
         }
+
+        @media screen and (max-width: 767px) {
+            margin-top: 105px;
+            margin-left: 40px;
+
+        }
     }
 
     &__puppy-img {
         max-height: 728px;
         @media screen and (max-width: 1279px) {
             max-height: 593px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-height: 271.77px;
         }
     }
 

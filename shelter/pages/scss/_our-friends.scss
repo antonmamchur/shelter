@@ -13,27 +13,59 @@
     color: #545454;
     margin: 0;
     padding: 0;
+
+    @media screen and (max-width: 767px) {
+        font-size: 25px;
+    }
     }
 
     &__btn-prev {
         margin-right: 53px;
+         background: #F6F6F6;
 
         @media screen and (max-width: 1279px) {
             margin-right: 12px;
             
         }
+
+        &_remove {
+            @media screen and (max-width: 767px) {
+                display: none;
+                
+            }
+        }
     }
 
     &__btn-next {
         margin-left: 53px;
+       background: #F6F6F6;
 
         @media screen and (max-width: 1279px) {
             margin-left: 12px;
+        }
+
+     &_remove {
+        @media screen and (max-width: 767px) {
+            display: none;
+            
+        }
+    }
+    }
+
+    &__pagination {
+        display: none;
+        @media screen and (max-width: 767px) {
+            display: flex;
+            gap: 60px;
         }
     }
 
     &__btn-link {
         text-decoration: none;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 12px;
+        }
     }
 
     &__content {
@@ -42,6 +74,11 @@
         align-items: center;
         padding: 80px 0 100px 0;
         row-gap: 60px;
+
+        @media screen and (max-width: 767px) {
+            padding: 35px 0 42px 0;
+            row-gap: 20px;
+        }
     }
 
     &__button {
@@ -65,7 +102,12 @@
         flex-direction: row;
         align-items: center;
 
-        
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            margin: 0 15px;
+            margin-top: 22px;
+            
+        }
 
         &__card-wrapper {
             display: flex;
@@ -82,7 +124,14 @@
 
                 
             }
+
+            @media screen and (max-width: 767px) {
+                width: 270px;
+                div:nth-child(2n) {
+                    display: none;
+                }
         }
+    }
         
             
         }
@@ -129,6 +178,11 @@
             letter-spacing: 0.06em;
             padding: 15px 45px;
             margin: 0;
+
+            @media screen and (max-width: 767px) {
+                margin-top: 15px;
+                
+            }
         }
 
         &__card-picture {

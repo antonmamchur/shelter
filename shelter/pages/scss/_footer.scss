@@ -12,6 +12,11 @@
             padding-top: 5px;
             margin: 0 34px;
         }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            margin: 0;
+        }
     }
 
     &__photo {
@@ -19,6 +24,13 @@
 
         @media screen and (max-width: 1279px) {
             align-self: center;
+        }
+    }
+
+    &__photo-img {
+        @media screen and (max-width: 767px) {
+            height: 269px;
+            
         }
     }
 
@@ -33,6 +45,11 @@
         @media screen and (max-width: 1279px) {
             justify-content:center;
             gap: 60px;
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            gap: 25px;
         }
     }
 
@@ -49,6 +66,7 @@
         letter-spacing: 0.06em;
         color: #F1CDB3;
     }
+    
 
     &__questions, &__visit {
         display: flex;
@@ -63,6 +81,10 @@
             margin-top: 20px;
             row-gap: 50px;
         }
+
+        @media screen and (max-width: 767px) {
+             row-gap: 50px;
+         }
     }
 
     &__visit {
@@ -82,6 +104,12 @@
         color: #FFFFFF;
         align-self: flex-start;
         margin-bottom: -10px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+            align-self: center;
+            text-align: center;
+         }
     }
 
     &__questions-contact-text, &__visit-location-text {
