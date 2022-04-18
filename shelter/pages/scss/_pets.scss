@@ -5,6 +5,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+                @media screen and (max-width: 1279px) {
+                    row-gap: 0;   
+        }
     }
 
     &__title {
@@ -20,6 +24,10 @@
             margin-bottom: 60px;
             padding: 0;
             padding-top: 80px;
+
+            @media screen and (max-width: 1279px) {
+                margin-bottom: 30px;   
+    }
         
     }
 
@@ -29,6 +37,10 @@
         column-gap: 40px;
         row-gap: 30px;
         margin-bottom: 60px;
+
+        @media screen and (max-width: 1279px) {
+            margin-bottom: 40px;   
+}
     }
 
     &__card {
@@ -41,11 +53,22 @@
             row-gap: 25px;
             padding-bottom: 30px;
             margin: 0;
+
+            &_removed {
+                @media screen and (max-width: 1279px) {
+                    display: none;   
+        }
+            }
     }
 
     &__pagination {
         display: flex;
         gap: 20px;  
-        padding-bottom: 100px;     
+        padding-bottom: 100px;    
+        
+        @media screen and (max-width: 1279px) {
+            padding-bottom: 76px;
+            margin-bottom: 10px; 
+}
     }
 }
