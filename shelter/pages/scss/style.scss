@@ -10,6 +10,7 @@
 .wrapper {
   max-width: 1200px;
   padding: 0 40px;
+  margin: 0 auto;
 
   @media  screen and (max-width: 1279px) {
     padding: 0 30px;
@@ -51,6 +52,8 @@
     &_inactive {
       cursor: auto;
       pointer-events: none;
+      border: 2px solid #CDCDCD;
+
     }
 
     &_highlight {

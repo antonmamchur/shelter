@@ -7,6 +7,7 @@
 .wrapper {
   max-width: 1200px;
   padding: 0 40px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1279px) {
   .wrapper {
@@ -49,6 +50,7 @@
 .btn-round_inactive {
   cursor: auto;
   pointer-events: none;
+  border: 2px solid #CDCDCD;
 }
 .btn-round_highlight {
   background: #F1CDB3;
@@ -1010,8 +1012,8 @@
   align-items: center;
   background: #FAFAFA;
   border-radius: 9px;
-  row-gap: 25px;
-  padding-bottom: 30px;
+  row-gap: 27px;
+  padding-bottom: 28px;
   margin: 0;
 }
 @media screen and (max-width: 1279px) {
